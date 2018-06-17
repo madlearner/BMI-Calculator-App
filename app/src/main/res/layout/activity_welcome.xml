@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mad.bmicalculator.WelcomeActivity">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="Height"
+        android:textColor="#000fff"
+        android:textSize="20sp"
+        android:layout_below="@+id/tvWelcome"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/spnFeet"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tvFeet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Feet"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#f123"
+        android:layout_below="@+id/tvHeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:id="@+id/tvInch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textColor="#f123"
+        android:layout_marginTop="22dp"
+        android:text="Inch"
+        android:layout_below="@+id/spnFeet"
+        android:layout_alignRight="@+id/tvFeet"
+        android:layout_alignEnd="@+id/tvFeet" />
+
+    <Spinner
+        android:id="@+id/spnInch"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/spnFeet"
+        android:layout_alignStart="@+id/spnFeet" />
+
+    <TextView
+        android:id="@+id/tvWeight"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000fff"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Weight"
+        android:layout_below="@+id/spnInch"
+        android:layout_alignLeft="@+id/tvHeight"
+        android:layout_alignStart="@+id/tvHeight" />
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Enter your Weight(kg)"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:layout_below="@+id/tvWeight"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Calculate"
+        android:layout_below="@+id/etWeight"
+        android:layout_toLeftOf="@+id/tvWeight"
+        android:layout_toStartOf="@+id/tvWeight"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnCalculate"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/tvWeight"
+        android:layout_toRightOf="@+id/tvWeight"
+        android:text="View History" />
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
